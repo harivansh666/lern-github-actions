@@ -1,9 +1,34 @@
+# name: learn-github-actions
+
+# on: push # Trigger on pushing to main branch-change
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: "greet User"
+#         run: echo "Hello buddy"
+
 name: learn-github-actions
 
-on: push # Trigger on pushing to main branch-change
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: "greet User"
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Greet User
         run: echo "Hello buddy"
+
+      - name: Show current directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
