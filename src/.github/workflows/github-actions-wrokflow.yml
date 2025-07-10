@@ -1,7 +1,6 @@
 name: learn-github-actions
 
-on: push # Trigger on pushing to main branch
-
+on: push # Trigger on pushing to main branch-change
 jobs:
   deploy:
     runs-on: ubuntu-latest
