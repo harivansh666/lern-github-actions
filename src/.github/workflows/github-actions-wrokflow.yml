@@ -1,3 +1,10 @@
 name: learn-github actions
 
-on: 
+on: push # Trigger on pushing to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "greet User"
+        run: echo "Hello buddy"
