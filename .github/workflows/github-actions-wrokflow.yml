@@ -1,9 +1,9 @@
-name: learn-github-actions
+# name: learn-github-actions
 
-on: push # Trigger on pushing to main branch-change
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "greet User"
-        run: echo "Hello buddy"
+# on: push # Trigger on pushing to main branch-change
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: "greet User"
+#         run: echo "Hello buddy"
