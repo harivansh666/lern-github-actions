@@ -41,4 +41,4 @@ jobs:
       - name: Build Project
         run: npm run build
       - name: deploy
-        run: echo "deploy successfull"  
+        run: echo "deploy successfully"

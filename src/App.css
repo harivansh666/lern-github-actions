@@ -1,0 +1,17 @@
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: red;
+  font-weight: 200;
+  margin: 2;
+  text-align: center;
+  font-size: 10vh;
+  border: 2 black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
