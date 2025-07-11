@@ -24,6 +24,7 @@ jobs:
       #   echo "${{toJson(github)}}"
       #   git clone https://github.com/${{github.repository}}.git
   deploy:
+    needs: test # iss naal deploy od he run houga jad test complete ho jyuga.
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
