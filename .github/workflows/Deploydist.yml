@@ -43,6 +43,12 @@ jobs:
       - name: printe the version
         run: node -v
 
+      - name: cache dependencies
+        uses: actions/cache@v4 # iss naal bar bar dependencys install kran de lod nahi pendi.
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
       - name: installing dependencies
         run: npm ci
       - name: Build Project
