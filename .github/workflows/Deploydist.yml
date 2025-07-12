@@ -1,7 +1,13 @@
 name: deploy dist
 
-on: [push, workflow_dispatch]
-
+# on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main # if i want workflow trigger when push in main branch not for all branches
+    paths-ignore:
+      - .github/workflow/*
+      - readme.md
 jobs:
   test:
     runs-on: ubuntu-latest
