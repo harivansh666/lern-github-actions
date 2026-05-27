@@ -19,7 +19,7 @@ jobs:
       - name: installing node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: printe the version
         run: node -v
 
@@ -46,7 +46,7 @@ jobs:
       - name: installing node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: printe the version
         run: node -v
 
